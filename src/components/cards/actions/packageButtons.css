@@ -1,0 +1,29 @@
+.card-package-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card-package-button {
+  background-color: hsl(130, 100%, 34%);
+  border-radius: 4px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 45%;
+  height: 60px;
+
+  color: white;
+  font-weight: bold;
+}
+.card-package-button_alt {
+  background-color: hsl(30, 100%, 50%);
+  border-radius: 4px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 45%;
+  height: 60px;
+
+  color: black;
+  font-weight: bold;
+}

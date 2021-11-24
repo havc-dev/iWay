@@ -1,0 +1,15 @@
+.icons {
+  /* display: inline-block; */
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  font-size: inherit;
+  font-family: inherit;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
