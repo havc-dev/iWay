@@ -1,11 +1,13 @@
 import { useEffect, useContext, useState } from "react";
-import { RoutesContext } from "../../context/routesContext";
+import { ContextRoutes } from '../../context/ContextRoutes';
+
 import PackageCard from '../cards/PackageCard'
 
-const Current = () => {
+const FailedRoute = () => {
+
   const [isLoading, setIsLoading] = useState(true);
-  const ctxRoutes = useContext(RoutesContext)
-  const currentRoute = ctxRoutes.routes.current
+  const RoutesCtx = useContext(ContextRoutes)
+  let route = RoutesCtx.FailedRoute;
 
   useEffect(() => {
     setTimeout(() => {
@@ -17,19 +19,19 @@ const Current = () => {
   return (
     <>
     { isLoading ?
-      <div>Cargando...</div>
+      <div>Cargando ruta...</div>
       :
       <>
-      { currentRoute.length > 0 ?
-      currentRoute.map((item, index) => (
+      { route.length > 0 ?
+      route.map((item, index) => (
         <article key={`${item.packageNumber}${index}`}>
-          <PackageCard item={item} />
+          <PackageCard item={item} route={failed}/>
         </article>
       ))
-    : <div>No hay paquetes</div>}
+    : <div>Aún sin fallas</div>}
       </>}
     </>
   )
 }
 
-export default Current
+export default FailedRoute

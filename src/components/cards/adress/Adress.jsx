@@ -1,5 +1,3 @@
-import './adress.css'
-
 const Adress = ({barrio, street, block, lot, number}) => {
   return (
     <div className={`address-container`}>

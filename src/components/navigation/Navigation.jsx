@@ -1,55 +1,29 @@
-import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
-import {DriverContext} from '../../context/driverContext'
-
-import './navigation.css'
+import { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
+import { ContextDriver }  from '../../context/ContextDriver';
 
 
 const Navigation = () => {
-  const ctxDriver = useContext(DriverContext);
-  const driverLoggedIn = ctxDriver.isLoggedIn;
-
-  const [lat, setLat] = useState(null);
-  const [lng, setLng] = useState(null);
-  const [status, setStatus] = useState(null);
-
-  const getLocation = () => {
-    if (!navigator.geolocation) {
-      setStatus('Geolocation is not supported by your browser');
-      
-    } else {
-      setStatus('Locating...');
-      navigator.geolocation.getCurrentPosition((position) => {
-        setStatus(null);
-        setLat(position.coords.latitude);
-        setLng(position.coords.longitude);
-      }, (failure) => {
-        setStatus('Unable to retrieve your location');
-        alert(failure.message);
-      });
-    }
-    
-  }
+  const DriverCtx = useContext(ContextDriver)
+  const { isLoggedIn } = DriverCtx;
+  // console.log(DriverCtx)
 
   return (
     <nav>
-      {driverLoggedIn ? 
+      {isLoggedIn ? 
         <>
-          <Link className="nav-link" to="/welcome">Welcome</Link>
-          <Link className="nav-link" to="/onhold">On Hold</Link>
-          <Link className="nav-link" to="/successful">Successful</Link>
-          <Link className="nav-link" to="/logout">Logout</Link>
+          <NavLink className={({ isActive }) => isActive ? "active-navLink" : "navLink"} to="/">Route</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active-navLink" : "navLink"} to="/pending">Map</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active-navLink" : "navLink"} to="/successful">Profile</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active-navLink" : "navLink"} to="/logout">Logout</NavLink>
         </>
         :
         <>
-          <Link className="nav-link" to="/">Home</Link>
-          <Link className="nav-link" to="/about">About</Link>
-          <Link className="nav-link" to="/contact">Contact</Link>
-          <Link className="nav-link" to="/login">Login</Link>
-          <p>{lat}</p>
-          <p>{lng}</p>
+          <NavLink className={({ isActive }) => isActive ? "active-navLink" : "navLink"} to="/">Home</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active-navLink" : "navLink"} to="/about">About</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active-navLink" : "navLink"} to="/contact">Contact</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active-navLink" : "navLink"} to="/login">Login</NavLink>
         </>}
-      <button onClick={getLocation}>Location</button>
      
     </nav>
   );

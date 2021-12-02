@@ -1,5 +1,3 @@
-import './packageButtons.css'
-
 const PackageButtons = () => {
 
   const postponeHandler = () => {

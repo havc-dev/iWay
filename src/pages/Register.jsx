@@ -1,28 +1,27 @@
 import { useContext } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { signUp } from '../firebase/firebaseConfig';
 import { ContextDriver } from '../context/ContextDriver';
-import { signIn } from '../firebase/firebaseConfig';
 
-
-
-const Login = () => {
+const Register = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  
   let navigate = useNavigate();
   const DriverCtx = useContext(ContextDriver);
 
   const onSubmit = async (data) => {
     const { email, password } = data;
-    await signIn(email, password)
+    await signUp(email, password)
       .then((userCredential) => {
         //Signed in successfully
         const user = userCredential.user;
         DriverCtx.setIsLoggedIn(true);
+        DriverCtx.setDriver(user);
         localStorage.setItem('isLoggedIn', true);
         //..
         navigate(`/`);
@@ -30,15 +29,15 @@ const Login = () => {
       .catch((error) => {
         //Failed to sign in
         const errorCode = error.code;
-        console.log('Error code: ' + errorCode);
+        console.log(errorCode);
         const errorMessage = error.message;
-        console.log('Error message: ' + errorMessage);
+        console.log(errorMessage);
       });
   };
 
   return (
     <main>
-      <h1>Iniciar sesión</h1>
+      <h1>Registro</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor='email'>
           Correo:
@@ -57,10 +56,10 @@ const Login = () => {
         <input type='submit' />
       </form>
       <p>
-        Necesitas una cuenta? <NavLink to='/register'>Crea una cuenta</NavLink>
+        Ya tienes cuenta? <NavLink to='/login'>Inicia sesión</NavLink>
       </p>
     </main>
   );
 };
 
-export default Login;
+export default Register;

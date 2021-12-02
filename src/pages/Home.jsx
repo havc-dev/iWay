@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from 'react';
 import VisitorHome from '../components/pages/VisitorHome';
-import { DriverContext } from '../context/driverContext';
+import { ContextDriver } from '../context/ContextDriver';
 import MyRoutes from '../pages/MyRoutes';
 
 const Home = () => {
-  const ctxDriver = useContext(DriverContext);
+  const DriverCtx = useContext(ContextDriver);
   useEffect(() => {
     let loggedIn = localStorage.getItem('loggedIn');
     if (loggedIn) {
@@ -12,7 +12,7 @@ const Home = () => {
     }
   }, []);
 
-  return <>{ctxDriver.isLoggedIn ? <MyRoutes /> : <VisitorHome />}</>;
+  return <>{DriverCtx.isLoggedIn ? <MyRoutes /> : <VisitorHome />}</>;
 };
 
 export default Home;

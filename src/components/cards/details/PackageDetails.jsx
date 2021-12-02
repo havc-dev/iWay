@@ -1,7 +1,6 @@
 import UserIcon from '../../../assets/icons/UserIcon';
 import HouseIcon from '../../../assets/icons/HouseIcon';
 import DoorIcon from '../../../assets/icons/DoorIcon';
-import './packageDetails.css';
 
 const PackageDetails = ({ clientName, color, colorAlt }) => {
   return (

@@ -1,34 +1,46 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { DriverContext } from '../context/driverContext';
-import { RoutesContext } from '../context/routesContext';
+import { ContextDriver } from '../context/ContextDriver';
 
-import routesObject from '../routes.json';
-import './login.css';
+import { logOut } from '../firebase/firebaseConfig';
 
 const Logout = () => {
-
   let navigate = useNavigate();
-  const ctxDriver = useContext(DriverContext);
-  const ctxRoutes = useContext(RoutesContext);
+  const DriverCtx = useContext(ContextDriver);
+  const [loading, setLoading] = useState(false);
+  const [errorCode, setErrorCode] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
 
-  const logoutHandler = async () => {
-    ctxDriver.setIsLoggedIn(false);
-    localStorage.setItem('isLoggedIn', false);
-    localStorage.removeItem('savedRoute');
-    ctxRoutes.setRoutes({});
-    navigate(`/`);
+  const onSubmit = async () => {
+    setLoading(true);
+    await logOut()
+      .then(() => {
+        DriverCtx.setIsLoggedIn(false);
+        DriverCtx.setDriver(null);
+        localStorage.setItem('isLoggedIn', false);
+        navigate(`/`);
+      })
+      .catch((error) => {
+        if (error.code) {
+          setErrorCode(error.code);
+          alert(errorCode);
+        }
+        if (error.message) {
+        setErrorMessage(error.message);
+        alert(errorMessage);
+        }
+      });
+      setLoading(false);
   };
+
   return (
     <main>
-      <h1>Logout</h1>
-      Seguro que desea cerrar sesión?
-      <ul>
-        <li>La ruta actual se perderá para siempre</li>
-      </ul>
-      <button className={`btn-main`} onClick={logoutHandler}>
-        Logout
-      </button>
+      <h1>Cerrar sesión</h1>
+      <h3>Está seguro de que desea cerrar sesión?</h3>
+
+      <h4>Cualquier cambio no guardado se perderá</h4>
+
+      <button disabled={loading} onClick={onSubmit}>Cerrar Sesión</button>
     </main>
   );
 };

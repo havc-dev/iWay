@@ -1,6 +1,5 @@
 import WhatsAppIcon from '../../../assets/icons/WhatsAppIcon';
 import PhoneIcon from '../../../assets/icons/PhoneIcon';
-import './packageActions.css';
 
 const PackageActions = ({ messageHelp, messageError, phoneNumber, clientName }) => {
   return (

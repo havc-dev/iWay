@@ -1,17 +1,16 @@
-import './packageCard.css';
 import { useContext } from 'react';
-import { DriverContext } from '../../context/driverContext';
 import Adress from './adress/Adress';
 import PackageNumber from './package/PackageNumber';
 import PackageDetails from './details/PackageDetails';
 import PackageActions from './actions/PackageActions';
 import PackageButtons from './actions/PackageButtons';
+import { ContextDriver } from '../../context/ContextDriver';
 
-const PackageCard = ({ item }) => {
-  const ctxDriver = useContext(DriverContext);
+const PackageCard = ({ item, route }) => {
+  const DriverCtx = useContext(ContextDriver)
   console.log(item);
 
-  const { driverName } = ctxDriver;
+  const { driverName } = DriverCtx;
   const driver = driverName;
 
   const {
@@ -38,8 +37,8 @@ const PackageCard = ({ item }) => {
   )}`;
 
   return (
-    <div className={`card-package`}>
-      <div className={`card-package-title`}>
+    <article className={`card-package-${route}`}>
+      <div className={`card-package-header`}>
         <Adress
           barrio={addressBarrio}
           block={addressBlock}
@@ -58,7 +57,7 @@ const PackageCard = ({ item }) => {
       <PackageActions messageError={messageError} phoneNumber={phoneNumber} messageHelp={messageHelp} clientName={clientName} />
         
       <PackageButtons />
-    </div>
+    </article>
   );
 };
 

@@ -1,0 +1,28 @@
+{
+  "_ID": "0",
+  "name": "MELIENEX Crowd",
+  "locations": [
+    {
+      "country": "MX",
+      "state": "QR",
+      "city": "Benito Juárez",
+      "address": "",
+      "latitude": "",
+      "longitude": "",
+      "description": "Mercado Libre Last Mile Delivery Service",
+      "url": "",
+      "category": "Outsource Service Providers",
+      "subcategory": "Last Mile Delivery",
+      "icon": "",
+      "image": "",
+      "link": "",
+      "source": "",
+      "objectId": "",
+      "createdAt": "",
+      "updatedAt": "",
+      "drivers": [
+        {"id": "123asd"}
+      ]
+    }
+  ]
+}

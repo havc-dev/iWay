@@ -1,0 +1,80 @@
+{
+  "driverId": "EX1_534",
+  "current": [
+    {
+      "packageNumber": 1,
+      "clientName": "John Doe",
+      "clientPhone": "123456789",
+      "clientAddress": {
+        "state": "NY",
+        "city": "New York",
+        "settlement": "Brooklyn",
+        "street": "Main Street",
+        "block": "1",
+        "lot": "1",
+        "houseNumber": "1",
+        "references": {
+          "betweenStreet1": "canaima",
+          "betweenStreet2": "itzales",
+          "house": {
+            "wallColor": "brown",
+            "doorColor": "white",
+            "doorMaterial": "wood",
+            "other": "palmera"
+          }
+        }
+      }
+    },
+    {
+      "packageNumber": 2,
+      "clientName": "John Doe",
+      "clientPhone": "123456789",
+      "clientAddress": {
+        "state": "NY",
+        "city": "New York",
+        "settlement": "Brooklyn",
+        "street": "Main Street",
+        "block": "1",
+        "lot": "1",
+        "houseNumber": "1",
+        "references": {
+          "betweenStreet1": "canaima",
+          "betweenStreet2": "itzales",
+          "house": {
+            "wallColor": "brown",
+            "doorColor": "white",
+            "doorMaterial": "wood",
+            "other": "palmera"
+          }
+        }
+      }
+    },
+    {
+      "packageNumber": 3,
+      "clientName": "Jane Doe",
+      "clientPhone": "1234567890",
+      "clientAddress": {
+        "state": "QR",
+        "city": "Cancun",
+        "settlement": "Region 519",
+        "street": "La Noria",
+        "block": "35",
+        "lot": "",
+        "houseNumber": "5",
+        "references": {
+          "betweenStreet1": "canaima",
+          "betweenStreet2": "itzales",
+          "house": {
+            "wallColor": "brown",
+            "doorColor": "white",
+            "doorMaterial": "wood",
+            "other": "palmera"
+          }
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "successful": [],
+  "failed": []
+}

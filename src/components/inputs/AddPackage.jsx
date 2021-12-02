@@ -1,10 +1,45 @@
 import { useContext, useEffect, useState } from 'react';
-import { RoutesContext } from '../../context/routesContext';
 import { useForm } from 'react-hook-form';
-import './addPackage.css'
+import BoxOpenIcon from '../../assets/icons/BoxOpenIcon';
+import { ContextRoutes } from '../../context/ContextRoutes';
+import { doc, setDoc } from 'firebase/firestore'
+
 
 const AddPackage = ({ setIsAddingPackages }) => {
-  const  ctxRoutes = useContext(RoutesContext);
+
+  const colorOptions = {
+    "red": "Red",
+    "orange": "Orange",
+    "yellow": "Yellow",
+    "green": "Green",
+    "blue": "Blue",
+    "purple": "Purple",
+    "pink": "Pink",
+    "black": "Black",
+    "white": "White",
+    "gray": "Gray",
+    "brown": "Brown",
+    "maroon": "Maroon",
+    "navy": "Navy",
+    "olive": "Olive",
+    "teal": "Teal",
+    "silver": "Silver",
+    "gold": "Gold",
+    "beige": "Beige",
+    "ivory": "Ivory",
+  } 
+    
+  // <option value="blanca">blanca</option>
+  //           <option value="negra">negra</option>
+  //           <option value="cafe">cafe</option>
+  //           <option value="amarilla">amarilla</option>
+  //           <option value="naranja">naranja</option>
+  //           <option value="rosa">rosa</option>
+  //           <option value="roja">roja</option>
+  //           <option value="morada">morada</option>
+  //           <option value="azul">azul</option>
+  //           <option value="verde">verde</option>
+  const RoutesCtx = useContext(ContextRoutes)
   const [isLoading, setIsLoading] = useState(true);
 
   const {
@@ -19,17 +54,26 @@ const AddPackage = ({ setIsAddingPackages }) => {
     }, 250);
   }, []);
 
-  const onSubmit = (data) => {
-    let retrievedObject = JSON.parse(localStorage.getItem('savedRoute'));
-    retrievedObject.current.push(data);
-    localStorage.setItem('savedRoute', JSON.stringify(retrievedObject));
-    ctxRoutes.setRoutes(retrievedObject)
+  const onSubmit = async (data) => {
+    setIsLoading(true);
+    const { name, description, price, quantity } = data;
+    const newPackage = {
+      name,
+      description,
+      price,
+      quantity,
+      createdAt: new Date(),
+    };
+
+    await setDoc(db, "routes")
+    await RoutesCtx.setCurrentRoute(RoutesCtx.currentRoute.push(data));
+    localStorage.setItem('savedCurrent', JSON.stringify(RoutesCtx.currentRoute));
     setIsAddingPackages(false);
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <h2>Agregar paquete</h2>
+      <legend>Agregar paquete</legend>
       {isLoading? <p>Cargando...</p> : 
       <div className="form-inputs">
         <label htmlFor='packageNumber'>
@@ -50,10 +94,10 @@ const AddPackage = ({ setIsAddingPackages }) => {
           {errors.phoneNumber && <span>Debes agregar número de teléfono</span>}
         </label>
 
-        <label htmlFor='addressBarrio'>
+        <label htmlFor='addressSettlement'>
           Colonia:
-          <input type='text' {...register('addressBarrio', { required: true })} />
-          {errors.addressBarrio && <span>This field is required</span>}
+          <input type='text' {...register('addressSettlement', { required: true })} />
+          {errors.addressSettlement && <span>This field is required</span>}
         </label>
 
         <label htmlFor='addressStreet'>
@@ -82,7 +126,8 @@ const AddPackage = ({ setIsAddingPackages }) => {
 
         <label htmlFor='houseColour'>
           Color de casa:
-          <select {...register("houseColour")}>
+          <select {...register("houseColour")} defaultValue={'chooseColor'}>
+            <option value="chooseColor" disabled>Seleccione color</option>
             <option value="blanca">blanca</option>
             <option value="negra">negra</option>
             <option value="cafe">cafe</option>
@@ -99,7 +144,8 @@ const AddPackage = ({ setIsAddingPackages }) => {
 
         <label htmlFor='houseColourSecondary'>
           Color secundario de casa:
-          <select {...register("houseColourSecondary")}>
+          <select {...register("houseColourSecondary")} defaultValue={'chooseColorSecondary'}>
+            <option value="chooseColor" defaultValue disabled>Seleccione color</option>
             <option value="blanca">blanca</option>
             <option value="negra">negra</option>
             <option value="cafe">cafe</option>
@@ -114,9 +160,48 @@ const AddPackage = ({ setIsAddingPackages }) => {
           {errors.houseColourSecondary && <span>This field is required</span>}
         </label>
 
+        <label htmlFor='fenceColour'>
+          Color de reja:
+          <select {...register("fenceColour")} defaultValue={'chooseFenceColor'}>
+            <option value="chooseColor" defaultValue disabled>Seleccione color de reja</option>
+            <option value="blanca">blanca</option>
+            <option value="negra">negra</option>
+            <option value="cafe">cafe</option>
+            <option value="amarilla">amarilla</option>
+            <option value="naranja">naranja</option>
+            <option value="rosa">rosa</option>
+            <option value="roja">roja</option>
+            <option value="morada">morada</option>
+            <option value="azul">azul</option>
+            <option value="verde">verde</option>
+          </select>
+          {errors.fenceColour && <span>This field is required</span>}
+        </label>
+
+        <label htmlFor='fenceMaterial'>
+          Color secundario de casa:
+          <select {...register("fenceMaterial")} defaultValue={'chooseColor'}>
+            <option value="chooseColor" defaultValue disabled>Seleccione material reja</option>
+            <option value="blanca">blanca</option>
+            <option value="negra">negra</option>
+            <option value="cafe">cafe</option>
+            <option value="amarilla">amarilla</option>
+            <option value="naranja">naranja</option>
+            <option value="rosa">rosa</option>
+            <option value="roja">roja</option>
+            <option value="morada">morada</option>
+            <option value="azul">azul</option>
+            <option value="verde">verde</option>
+          </select>
+          {errors.fenceMaterial && <span>This field is required</span>}
+        </label>
+
       </div>
 }
-      <input type='submit' className='inputButton' value='Agregar Paquete' />
+      <button type='submit' className='submitBtn' value='Agregar Paquete'>
+        <BoxOpenIcon />
+        Agregar Paquete
+      </button>
     </form>
   );
 };

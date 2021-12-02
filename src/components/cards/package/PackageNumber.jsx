@@ -1,5 +1,4 @@
 import BoxOpenIcon from '../../../assets/icons/BoxOpenIcon';
-import './packageNumber.css'
 
 const PackageNumber = ({ packageNumber }) => {
   return (

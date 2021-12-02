@@ -1,0 +1,47 @@
+{
+  "_ID": "0",
+  "name": "John Doe",
+  "country": "MX",
+  "state": "QR",
+  "city": "Cancún",
+  "address": {
+    "street": "Main Street",
+    "number": "123",
+    "settlement": "Queens",
+    "block": "A",
+    "lot": "1",
+    "houseNumber": "1",
+    "zipCode": "10001"
+  },
+  "phone": "123456789",
+  "alternatePhone": "987654321",
+  "status": 1,
+  "platforms": [
+    {
+      "name": "Uber",
+      "status": 1,
+      "id": "1"
+    },
+    {
+      "name": "Mercado Libre Envíos Extra",
+      "status": 2,
+      "id": "2"
+    }
+  ],
+  "vehicles": [
+    {
+      "name": "Mazda",
+      "model": "CX-5",
+      "plate": "ABC123",
+      "status": 1,
+      "id": "1"
+    },
+    {
+      "name": "Mazda",
+      "model": "CX-5",
+      "plate": "ABC123",
+      "status": 0,
+      "id": "2"
+    }
+  ]
+}

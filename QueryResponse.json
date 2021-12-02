@@ -1,0 +1,1049 @@
+{
+  "_firestore": {
+      "app": {
+          "_isDeleted": false,
+          "_options": {
+              "apiKey": "AIzaSyBpOczOHEkQVuJWbcIO1V0z8LklME8nCOw",
+              "authDomain": "iway-8b6bc.firebaseapp.com",
+              "projectId": "iway-8b6bc",
+              "storageBucket": "iway-8b6bc.appspot.com",
+              "messagingSenderId": "776579277739",
+              "appId": "1:776579277739:web:56d9f6f7edc977255f68ee"
+          },
+          "_config": {
+              "name": "[DEFAULT]",
+              "automaticDataCollectionEnabled": false
+          },
+          "_name": "[DEFAULT]",
+          "_automaticDataCollectionEnabled": false,
+          "_container": {
+              "name": "[DEFAULT]",
+              "providers": {}
+          }
+      },
+      "databaseId": {
+          "projectId": "iway-8b6bc",
+          "database": "(default)"
+      },
+      "settings": {
+          "host": "firestore.googleapis.com",
+          "ssl": true,
+          "ignoreUndefinedProperties": false,
+          "cacheSizeBytes": 41943040,
+          "experimentalForceLongPolling": false,
+          "experimentalAutoDetectLongPolling": false,
+          "useFetchStreams": true
+      }
+  },
+  "_userDataWriter": {
+      "firestore": {
+          "app": {
+              "_isDeleted": false,
+              "_options": {
+                  "apiKey": "AIzaSyBpOczOHEkQVuJWbcIO1V0z8LklME8nCOw",
+                  "authDomain": "iway-8b6bc.firebaseapp.com",
+                  "projectId": "iway-8b6bc",
+                  "storageBucket": "iway-8b6bc.appspot.com",
+                  "messagingSenderId": "776579277739",
+                  "appId": "1:776579277739:web:56d9f6f7edc977255f68ee"
+              },
+              "_config": {
+                  "name": "[DEFAULT]",
+                  "automaticDataCollectionEnabled": false
+              },
+              "_name": "[DEFAULT]",
+              "_automaticDataCollectionEnabled": false,
+              "_container": {
+                  "name": "[DEFAULT]",
+                  "providers": {}
+              }
+          },
+          "databaseId": {
+              "projectId": "iway-8b6bc",
+              "database": "(default)"
+          },
+          "settings": {
+              "host": "firestore.googleapis.com",
+              "ssl": true,
+              "ignoreUndefinedProperties": false,
+              "cacheSizeBytes": 41943040,
+              "experimentalForceLongPolling": false,
+              "experimentalAutoDetectLongPolling": false,
+              "useFetchStreams": true
+          }
+      }
+  },
+  "_snapshot": {
+      "query": {
+          "path": {
+              "segments": [
+                  "routes"
+              ],
+              "offset": 0,
+              "len": 1
+          },
+          "collectionGroup": null,
+          "explicitOrderBy": [],
+          "filters": [],
+          "limit": null,
+          "limitType": "F",
+          "startAt": null,
+          "endAt": null,
+          "V": [
+              {
+                  "field": {
+                      "segments": [
+                          "__name__"
+                      ],
+                      "offset": 0,
+                      "len": 1
+                  },
+                  "dir": "asc"
+              }
+          ],
+          "S": {
+              "path": {
+                  "segments": [
+                      "routes"
+                  ],
+                  "offset": 0,
+                  "len": 1
+              },
+              "collectionGroup": null,
+              "orderBy": [
+                  {
+                      "field": {
+                          "segments": [
+                              "__name__"
+                          ],
+                          "offset": 0,
+                          "len": 1
+                      },
+                      "dir": "asc"
+                  }
+              ],
+              "filters": [],
+              "limit": null,
+              "startAt": null,
+              "endAt": null,
+              "A": "routes|f:|ob:__name__asc"
+          }
+      },
+      "docs": {
+          "keyedMap": {
+              "root": {
+                  "key": {
+                      "path": {
+                          "segments": [
+                              "projects",
+                              "iway-8b6bc",
+                              "databases",
+                              "(default)",
+                              "documents",
+                              "routes",
+                              "NwBgCYAz2RhIANqInSfM"
+                          ],
+                          "offset": 5,
+                          "len": 2
+                      }
+                  },
+                  "value": {
+                      "key": {
+                          "path": {
+                              "segments": [
+                                  "projects",
+                                  "iway-8b6bc",
+                                  "databases",
+                                  "(default)",
+                                  "documents",
+                                  "routes",
+                                  "NwBgCYAz2RhIANqInSfM"
+                              ],
+                              "offset": 5,
+                              "len": 2
+                          }
+                      },
+                      "documentType": 1,
+                      "version": {
+                          "timestamp": {
+                              "seconds": 1638140322,
+                              "nanoseconds": 61713000
+                          }
+                      },
+                      "data": {
+                          "value": {
+                              "mapValue": {
+                                  "fields": {
+                                      "successful": {
+                                          "arrayValue": {
+                                              "values": [
+                                                  {
+                                                      "mapValue": {}
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "driver": {
+                                          "referenceValue": "projects/iway-8b6bc/databases/(default)/documents/drivers/dcZbpLlTrai5nsRTnk6L"
+                                      },
+                                      "current": {
+                                          "arrayValue": {
+                                              "values": [
+                                                  {
+                                                      "mapValue": {
+                                                          "fields": {
+                                                              "package": {
+                                                                  "stringValue": "1"
+                                                              },
+                                                              "client": {
+                                                                  "mapValue": {
+                                                                      "fields": {
+                                                                          "address": {
+                                                                              "mapValue": {
+                                                                                  "fields": {
+                                                                                      "street": {
+                                                                                          "stringValue": "La Noria"
+                                                                                      },
+                                                                                      "lot": {
+                                                                                          "stringValue": "5"
+                                                                                      },
+                                                                                      "block": {
+                                                                                          "stringValue": "35"
+                                                                                      },
+                                                                                      "settlement": {
+                                                                                          "stringValue": "Region 519"
+                                                                                      },
+                                                                                      "number": {
+                                                                                          "stringValue": "5a"
+                                                                                      }
+                                                                                  }
+                                                                              }
+                                                                          },
+                                                                          "name": {
+                                                                              "stringValue": "Juan Perez Troika"
+                                                                          },
+                                                                          "references": {
+                                                                              "mapValue": {
+                                                                                  "fields": {
+                                                                                      "between": {
+                                                                                          "mapValue": {
+                                                                                              "fields": {
+                                                                                                  "streetTwo": {
+                                                                                                      "stringValue": "por cual"
+                                                                                                  },
+                                                                                                  "streetOne": {
+                                                                                                      "stringValue": "calle tal"
+                                                                                                  }
+                                                                                              }
+                                                                                          }
+                                                                                      },
+                                                                                      "houseDescription": {
+                                                                                          "mapValue": {
+                                                                                              "fields": {
+                                                                                                  "fenceColor": {
+                                                                                                      "stringValue": "negra"
+                                                                                                  },
+                                                                                                  "houseColorSecondary": {
+                                                                                                      "stringValue": "cafe"
+                                                                                                  },
+                                                                                                  "houseColor": {
+                                                                                                      "stringValue": "blanca"
+                                                                                                  },
+                                                                                                  "fenceMaterial": {
+                                                                                                      "stringValue": "Metal"
+                                                                                                  },
+                                                                                                  "other": {
+                                                                                                      "stringValue": "palmera"
+                                                                                                  }
+                                                                                              }
+                                                                                          }
+                                                                                      }
+                                                                                  }
+                                                                              }
+                                                                          },
+                                                                          "phone": {
+                                                                              "stringValue": ""
+                                                                          }
+                                                                      }
+                                                                  }
+                                                              }
+                                                          }
+                                                      }
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "failed": {
+                                          "arrayValue": {
+                                              "values": [
+                                                  {
+                                                      "mapValue": {}
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "pending": {
+                                          "arrayValue": {
+                                              "values": [
+                                                  {
+                                                      "mapValue": {}
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "provider": {
+                                          "referenceValue": "projects/iway-8b6bc/databases/(default)/documents/providers/eQ6jc7hWPQQPfQRjwRHH"
+                                      }
+                                  }
+                              }
+                          }
+                      },
+                      "documentState": 0
+                  },
+                  "color": false,
+                  "left": {
+                      "key": {
+                          "path": {
+                              "segments": [
+                                  "projects",
+                                  "iway-8b6bc",
+                                  "databases",
+                                  "(default)",
+                                  "documents",
+                                  "routes",
+                                  "AH29fE3DtZdq3JVAzmPO"
+                              ],
+                              "offset": 5,
+                              "len": 2
+                          }
+                      },
+                      "value": {
+                          "key": {
+                              "path": {
+                                  "segments": [
+                                      "projects",
+                                      "iway-8b6bc",
+                                      "databases",
+                                      "(default)",
+                                      "documents",
+                                      "routes",
+                                      "AH29fE3DtZdq3JVAzmPO"
+                                  ],
+                                  "offset": 5,
+                                  "len": 2
+                              }
+                          },
+                          "documentType": 1,
+                          "version": {
+                              "timestamp": {
+                                  "seconds": 1638416099,
+                                  "nanoseconds": 696781000
+                              }
+                          },
+                          "data": {
+                              "value": {
+                                  "mapValue": {
+                                      "fields": {
+                                          "test": {
+                                              "stringValue": "asdfasdfasdf"
+                                          }
+                                      }
+                                  }
+                              }
+                          },
+                          "documentState": 0
+                      },
+                      "color": false,
+                      "left": {
+                          "size": 0
+                      },
+                      "right": {
+                          "size": 0
+                      },
+                      "size": 1
+                  },
+                  "right": {
+                      "key": {
+                          "path": {
+                              "segments": [
+                                  "projects",
+                                  "iway-8b6bc",
+                                  "databases",
+                                  "(default)",
+                                  "documents",
+                                  "routes",
+                                  "jM0FDRTKZwkQMUWWQgwR"
+                              ],
+                              "offset": 5,
+                              "len": 2
+                          }
+                      },
+                      "value": {
+                          "key": {
+                              "path": {
+                                  "segments": [
+                                      "projects",
+                                      "iway-8b6bc",
+                                      "databases",
+                                      "(default)",
+                                      "documents",
+                                      "routes",
+                                      "jM0FDRTKZwkQMUWWQgwR"
+                                  ],
+                                  "offset": 5,
+                                  "len": 2
+                              }
+                          },
+                          "documentType": 1,
+                          "version": {
+                              "timestamp": {
+                                  "seconds": 1638416109,
+                                  "nanoseconds": 271296000
+                              }
+                          },
+                          "data": {
+                              "value": {
+                                  "mapValue": {
+                                      "fields": {
+                                          "test12": {
+                                              "stringValue": "fasdfqw345qf"
+                                          }
+                                      }
+                                  }
+                              }
+                          },
+                          "documentState": 0
+                      },
+                      "color": false,
+                      "left": {
+                          "size": 0
+                      },
+                      "right": {
+                          "size": 0
+                      },
+                      "size": 1
+                  },
+                  "size": 3
+              }
+          },
+          "sortedSet": {
+              "root": {
+                  "key": {
+                      "key": {
+                          "path": {
+                              "segments": [
+                                  "projects",
+                                  "iway-8b6bc",
+                                  "databases",
+                                  "(default)",
+                                  "documents",
+                                  "routes",
+                                  "NwBgCYAz2RhIANqInSfM"
+                              ],
+                              "offset": 5,
+                              "len": 2
+                          }
+                      },
+                      "documentType": 1,
+                      "version": {
+                          "timestamp": {
+                              "seconds": 1638140322,
+                              "nanoseconds": 61713000
+                          }
+                      },
+                      "data": {
+                          "value": {
+                              "mapValue": {
+                                  "fields": {
+                                      "successful": {
+                                          "arrayValue": {
+                                              "values": [
+                                                  {
+                                                      "mapValue": {}
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "driver": {
+                                          "referenceValue": "projects/iway-8b6bc/databases/(default)/documents/drivers/dcZbpLlTrai5nsRTnk6L"
+                                      },
+                                      "current": {
+                                          "arrayValue": {
+                                              "values": [
+                                                  {
+                                                      "mapValue": {
+                                                          "fields": {
+                                                              "package": {
+                                                                  "stringValue": "1"
+                                                              },
+                                                              "client": {
+                                                                  "mapValue": {
+                                                                      "fields": {
+                                                                          "address": {
+                                                                              "mapValue": {
+                                                                                  "fields": {
+                                                                                      "street": {
+                                                                                          "stringValue": "La Noria"
+                                                                                      },
+                                                                                      "lot": {
+                                                                                          "stringValue": "5"
+                                                                                      },
+                                                                                      "block": {
+                                                                                          "stringValue": "35"
+                                                                                      },
+                                                                                      "settlement": {
+                                                                                          "stringValue": "Region 519"
+                                                                                      },
+                                                                                      "number": {
+                                                                                          "stringValue": "5a"
+                                                                                      }
+                                                                                  }
+                                                                              }
+                                                                          },
+                                                                          "name": {
+                                                                              "stringValue": "Juan Perez Troika"
+                                                                          },
+                                                                          "references": {
+                                                                              "mapValue": {
+                                                                                  "fields": {
+                                                                                      "between": {
+                                                                                          "mapValue": {
+                                                                                              "fields": {
+                                                                                                  "streetTwo": {
+                                                                                                      "stringValue": "por cual"
+                                                                                                  },
+                                                                                                  "streetOne": {
+                                                                                                      "stringValue": "calle tal"
+                                                                                                  }
+                                                                                              }
+                                                                                          }
+                                                                                      },
+                                                                                      "houseDescription": {
+                                                                                          "mapValue": {
+                                                                                              "fields": {
+                                                                                                  "fenceColor": {
+                                                                                                      "stringValue": "negra"
+                                                                                                  },
+                                                                                                  "houseColorSecondary": {
+                                                                                                      "stringValue": "cafe"
+                                                                                                  },
+                                                                                                  "houseColor": {
+                                                                                                      "stringValue": "blanca"
+                                                                                                  },
+                                                                                                  "fenceMaterial": {
+                                                                                                      "stringValue": "Metal"
+                                                                                                  },
+                                                                                                  "other": {
+                                                                                                      "stringValue": "palmera"
+                                                                                                  }
+                                                                                              }
+                                                                                          }
+                                                                                      }
+                                                                                  }
+                                                                              }
+                                                                          },
+                                                                          "phone": {
+                                                                              "stringValue": ""
+                                                                          }
+                                                                      }
+                                                                  }
+                                                              }
+                                                          }
+                                                      }
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "failed": {
+                                          "arrayValue": {
+                                              "values": [
+                                                  {
+                                                      "mapValue": {}
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "pending": {
+                                          "arrayValue": {
+                                              "values": [
+                                                  {
+                                                      "mapValue": {}
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "provider": {
+                                          "referenceValue": "projects/iway-8b6bc/databases/(default)/documents/providers/eQ6jc7hWPQQPfQRjwRHH"
+                                      }
+                                  }
+                              }
+                          }
+                      },
+                      "documentState": 0
+                  },
+                  "value": null,
+                  "color": false,
+                  "left": {
+                      "key": {
+                          "key": {
+                              "path": {
+                                  "segments": [
+                                      "projects",
+                                      "iway-8b6bc",
+                                      "databases",
+                                      "(default)",
+                                      "documents",
+                                      "routes",
+                                      "AH29fE3DtZdq3JVAzmPO"
+                                  ],
+                                  "offset": 5,
+                                  "len": 2
+                              }
+                          },
+                          "documentType": 1,
+                          "version": {
+                              "timestamp": {
+                                  "seconds": 1638416099,
+                                  "nanoseconds": 696781000
+                              }
+                          },
+                          "data": {
+                              "value": {
+                                  "mapValue": {
+                                      "fields": {
+                                          "test": {
+                                              "stringValue": "asdfasdfasdf"
+                                          }
+                                      }
+                                  }
+                              }
+                          },
+                          "documentState": 0
+                      },
+                      "value": null,
+                      "color": false,
+                      "left": {
+                          "size": 0
+                      },
+                      "right": {
+                          "size": 0
+                      },
+                      "size": 1
+                  },
+                  "right": {
+                      "key": {
+                          "key": {
+                              "path": {
+                                  "segments": [
+                                      "projects",
+                                      "iway-8b6bc",
+                                      "databases",
+                                      "(default)",
+                                      "documents",
+                                      "routes",
+                                      "jM0FDRTKZwkQMUWWQgwR"
+                                  ],
+                                  "offset": 5,
+                                  "len": 2
+                              }
+                          },
+                          "documentType": 1,
+                          "version": {
+                              "timestamp": {
+                                  "seconds": 1638416109,
+                                  "nanoseconds": 271296000
+                              }
+                          },
+                          "data": {
+                              "value": {
+                                  "mapValue": {
+                                      "fields": {
+                                          "test12": {
+                                              "stringValue": "fasdfqw345qf"
+                                          }
+                                      }
+                                  }
+                              }
+                          },
+                          "documentState": 0
+                      },
+                      "value": null,
+                      "color": false,
+                      "left": {
+                          "size": 0
+                      },
+                      "right": {
+                          "size": 0
+                      },
+                      "size": 1
+                  },
+                  "size": 3
+              }
+          }
+      },
+      "oldDocs": {
+          "keyedMap": {
+              "root": {
+                  "size": 0
+              }
+          },
+          "sortedSet": {
+              "root": {
+                  "size": 0
+              }
+          }
+      },
+      "docChanges": [
+          {
+              "type": 0,
+              "doc": {
+                  "key": {
+                      "path": {
+                          "segments": [
+                              "projects",
+                              "iway-8b6bc",
+                              "databases",
+                              "(default)",
+                              "documents",
+                              "routes",
+                              "AH29fE3DtZdq3JVAzmPO"
+                          ],
+                          "offset": 5,
+                          "len": 2
+                      }
+                  },
+                  "documentType": 1,
+                  "version": {
+                      "timestamp": {
+                          "seconds": 1638416099,
+                          "nanoseconds": 696781000
+                      }
+                  },
+                  "data": {
+                      "value": {
+                          "mapValue": {
+                              "fields": {
+                                  "test": {
+                                      "stringValue": "asdfasdfasdf"
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "documentState": 0
+              }
+          },
+          {
+              "type": 0,
+              "doc": {
+                  "key": {
+                      "path": {
+                          "segments": [
+                              "projects",
+                              "iway-8b6bc",
+                              "databases",
+                              "(default)",
+                              "documents",
+                              "routes",
+                              "NwBgCYAz2RhIANqInSfM"
+                          ],
+                          "offset": 5,
+                          "len": 2
+                      }
+                  },
+                  "documentType": 1,
+                  "version": {
+                      "timestamp": {
+                          "seconds": 1638140322,
+                          "nanoseconds": 61713000
+                      }
+                  },
+                  "data": {
+                      "value": {
+                          "mapValue": {
+                              "fields": {
+                                  "successful": {
+                                      "arrayValue": {
+                                          "values": [
+                                              {
+                                                  "mapValue": {}
+                                              }
+                                          ]
+                                      }
+                                  },
+                                  "driver": {
+                                      "referenceValue": "projects/iway-8b6bc/databases/(default)/documents/drivers/dcZbpLlTrai5nsRTnk6L"
+                                  },
+                                  "current": {
+                                      "arrayValue": {
+                                          "values": [
+                                              {
+                                                  "mapValue": {
+                                                      "fields": {
+                                                          "package": {
+                                                              "stringValue": "1"
+                                                          },
+                                                          "client": {
+                                                              "mapValue": {
+                                                                  "fields": {
+                                                                      "address": {
+                                                                          "mapValue": {
+                                                                              "fields": {
+                                                                                  "street": {
+                                                                                      "stringValue": "La Noria"
+                                                                                  },
+                                                                                  "lot": {
+                                                                                      "stringValue": "5"
+                                                                                  },
+                                                                                  "block": {
+                                                                                      "stringValue": "35"
+                                                                                  },
+                                                                                  "settlement": {
+                                                                                      "stringValue": "Region 519"
+                                                                                  },
+                                                                                  "number": {
+                                                                                      "stringValue": "5a"
+                                                                                  }
+                                                                              }
+                                                                          }
+                                                                      },
+                                                                      "name": {
+                                                                          "stringValue": "Juan Perez Troika"
+                                                                      },
+                                                                      "references": {
+                                                                          "mapValue": {
+                                                                              "fields": {
+                                                                                  "between": {
+                                                                                      "mapValue": {
+                                                                                          "fields": {
+                                                                                              "streetTwo": {
+                                                                                                  "stringValue": "por cual"
+                                                                                              },
+                                                                                              "streetOne": {
+                                                                                                  "stringValue": "calle tal"
+                                                                                              }
+                                                                                          }
+                                                                                      }
+                                                                                  },
+                                                                                  "houseDescription": {
+                                                                                      "mapValue": {
+                                                                                          "fields": {
+                                                                                              "fenceColor": {
+                                                                                                  "stringValue": "negra"
+                                                                                              },
+                                                                                              "houseColorSecondary": {
+                                                                                                  "stringValue": "cafe"
+                                                                                              },
+                                                                                              "houseColor": {
+                                                                                                  "stringValue": "blanca"
+                                                                                              },
+                                                                                              "fenceMaterial": {
+                                                                                                  "stringValue": "Metal"
+                                                                                              },
+                                                                                              "other": {
+                                                                                                  "stringValue": "palmera"
+                                                                                              }
+                                                                                          }
+                                                                                      }
+                                                                                  }
+                                                                              }
+                                                                          }
+                                                                      },
+                                                                      "phone": {
+                                                                          "stringValue": ""
+                                                                      }
+                                                                  }
+                                                              }
+                                                          }
+                                                      }
+                                                  }
+                                              }
+                                          ]
+                                      }
+                                  },
+                                  "failed": {
+                                      "arrayValue": {
+                                          "values": [
+                                              {
+                                                  "mapValue": {}
+                                              }
+                                          ]
+                                      }
+                                  },
+                                  "pending": {
+                                      "arrayValue": {
+                                          "values": [
+                                              {
+                                                  "mapValue": {}
+                                              }
+                                          ]
+                                      }
+                                  },
+                                  "provider": {
+                                      "referenceValue": "projects/iway-8b6bc/databases/(default)/documents/providers/eQ6jc7hWPQQPfQRjwRHH"
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "documentState": 0
+              }
+          },
+          {
+              "type": 0,
+              "doc": {
+                  "key": {
+                      "path": {
+                          "segments": [
+                              "projects",
+                              "iway-8b6bc",
+                              "databases",
+                              "(default)",
+                              "documents",
+                              "routes",
+                              "jM0FDRTKZwkQMUWWQgwR"
+                          ],
+                          "offset": 5,
+                          "len": 2
+                      }
+                  },
+                  "documentType": 1,
+                  "version": {
+                      "timestamp": {
+                          "seconds": 1638416109,
+                          "nanoseconds": 271296000
+                      }
+                  },
+                  "data": {
+                      "value": {
+                          "mapValue": {
+                              "fields": {
+                                  "test12": {
+                                      "stringValue": "fasdfqw345qf"
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "documentState": 0
+              }
+          }
+      ],
+      "mutatedKeys": {
+          "data": {
+              "root": {
+                  "size": 0
+              }
+          }
+      },
+      "fromCache": false,
+      "syncStateChanged": true,
+      "excludesMetadataChanges": false
+  },
+  "metadata": {
+      "hasPendingWrites": false,
+      "fromCache": false
+  },
+  "query": {
+      "converter": null,
+      "_query": {
+          "path": {
+              "segments": [
+                  "routes"
+              ],
+              "offset": 0,
+              "len": 1
+          },
+          "collectionGroup": null,
+          "explicitOrderBy": [],
+          "filters": [],
+          "limit": null,
+          "limitType": "F",
+          "startAt": null,
+          "endAt": null,
+          "V": [
+              {
+                  "field": {
+                      "segments": [
+                          "__name__"
+                      ],
+                      "offset": 0,
+                      "len": 1
+                  },
+                  "dir": "asc"
+              }
+          ],
+          "S": {
+              "path": {
+                  "segments": [
+                      "routes"
+                  ],
+                  "offset": 0,
+                  "len": 1
+              },
+              "collectionGroup": null,
+              "orderBy": [
+                  {
+                      "field": {
+                          "segments": [
+                              "__name__"
+                          ],
+                          "offset": 0,
+                          "len": 1
+                      },
+                      "dir": "asc"
+                  }
+              ],
+              "filters": [],
+              "limit": null,
+              "startAt": null,
+              "endAt": null,
+              "A": "routes|f:|ob:__name__asc"
+          }
+      },
+      "type": "collection",
+      "firestore": {
+          "app": {
+              "_isDeleted": false,
+              "_options": {
+                  "apiKey": "AIzaSyBpOczOHEkQVuJWbcIO1V0z8LklME8nCOw",
+                  "authDomain": "iway-8b6bc.firebaseapp.com",
+                  "projectId": "iway-8b6bc",
+                  "storageBucket": "iway-8b6bc.appspot.com",
+                  "messagingSenderId": "776579277739",
+                  "appId": "1:776579277739:web:56d9f6f7edc977255f68ee"
+              },
+              "_config": {
+                  "name": "[DEFAULT]",
+                  "automaticDataCollectionEnabled": false
+              },
+              "_name": "[DEFAULT]",
+              "_automaticDataCollectionEnabled": false,
+              "_container": {
+                  "name": "[DEFAULT]",
+                  "providers": {}
+              }
+          },
+          "databaseId": {
+              "projectId": "iway-8b6bc",
+              "database": "(default)"
+          },
+          "settings": {
+              "host": "firestore.googleapis.com",
+              "ssl": true,
+              "ignoreUndefinedProperties": false,
+              "cacheSizeBytes": 41943040,
+              "experimentalForceLongPolling": false,
+              "experimentalAutoDetectLongPolling": false,
+              "useFetchStreams": true
+          }
+      },
+      "_path": {
+          "segments": [
+              "routes"
+          ],
+          "offset": 0,
+          "len": 1
+      }
+  }
+}
